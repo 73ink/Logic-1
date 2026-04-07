@@ -36,10 +36,11 @@ public class practiceJava {
 //        practiceJava t11 = new practiceJava();
 //        System.out.println(t11.dateFashion(5, 10));
         // task-12
-        practiceJava t12 = new practiceJava();
-        System.out.println(t12.sortaSum(9, 4));
+//        practiceJava t12 = new practiceJava();
+//        System.out.println(t12.sortaSum(9, 4));
         // task-13
         practiceJava t13 = new practiceJava();
+        System.out.println(t13.in1To10(11, false));
         // task-14
         practiceJava t14 = new practiceJava();
         // task-15
@@ -225,6 +226,25 @@ public class practiceJava {
             return 20;
         } else{
             return sum;
+        }
+    }
+    public boolean in1To10(int n, boolean outsideMode){
+
+        if (outsideMode == false){
+            if (n >= 1 && n <= 10){
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
+        else{
+            if (n <= 1 || n >= 10){
+                return true;
+            }
+            else{
+                return false;
+            }
         }
     }
 }
