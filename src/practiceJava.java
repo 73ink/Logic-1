@@ -21,10 +21,11 @@ public class practiceJava {
 //        practiceJava t6 = new practiceJava();
 //        System.out.println(t6.teaParty(20, 6));
         // task-7
-        practiceJava t7 = new practiceJava();
-        System.out.println(t7.twoAsOne(3, 1, 2));
+//        practiceJava t7 = new practiceJava();
+//        System.out.println(t7.twoAsOne(3, 1, 2));
         // task-8
         practiceJava t8 = new practiceJava();
+        System.out.println(t8.lastDigit(23, 19, 12 ));
         // task-9
         practiceJava t9 = new practiceJava();
         // task-10
@@ -139,6 +140,25 @@ public class practiceJava {
             return true;
         }
         else if (b + c == a){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+    public boolean lastDigit(int a, int b, int c){
+
+        int lastA = a % 10;
+        int lastB = b % 10;
+        int lastC = c % 10;
+
+        if (lastA == lastB){
+            return true;
+        }
+        else if (lastA == lastC){
+            return true;
+        }
+        else if (lastB == lastC){
             return true;
         }
         else{
