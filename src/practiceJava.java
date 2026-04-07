@@ -27,10 +27,11 @@ public class practiceJava {
 //        practiceJava t8 = new practiceJava();
 //        System.out.println(t8.lastDigit(23, 19, 12 ));
         // task-9
-        practiceJava t9 = new practiceJava();
-        System.out.println(t9.maxMod5(2, 3));
+//        practiceJava t9 = new practiceJava();
+//        System.out.println(t9.maxMod5(2, 3));
         // task-10
         practiceJava t10 = new practiceJava();
+        System.out.println(t10.blueTicket(9, 1, 0));
         // task-11
         practiceJava t11 = new practiceJava();
         // task-12
@@ -184,6 +185,22 @@ public class practiceJava {
             } else{
                 return b;
             }
+        }
+    }
+    public int blueTicket(int a, int b, int c){
+
+        int ab = a + b;
+        int bc = b + c;
+        int ac = a + c;
+
+        if (ab == 10 || bc == 10 || ac == 10){
+            return 10;
+        }
+        else if (ab == bc + 10 || ab == ac + 10){
+            return 5;
+        }
+        else{
+            return 0;
         }
     }
 }
