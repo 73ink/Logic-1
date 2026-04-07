@@ -39,10 +39,11 @@ public class practiceJava {
 //        practiceJava t12 = new practiceJava();
 //        System.out.println(t12.sortaSum(9, 4));
         // task-13
-        practiceJava t13 = new practiceJava();
-        System.out.println(t13.in1To10(11, false));
+//        practiceJava t13 = new practiceJava();
+//        System.out.println(t13.in1To10(11, false));
         // task-14
         practiceJava t14 = new practiceJava();
+        System.out.println(t14.old35(15));
         // task-15
         practiceJava t15 = new practiceJava();
     }
@@ -245,6 +246,16 @@ public class practiceJava {
             else{
                 return false;
             }
+        }
+    }
+    public boolean old35(int n){
+
+        if (n % 3 == 0 && n % 5 != 0){
+            return true;
+        } else if (n % 5 == 0 && n % 3 != 0){
+            return true;
+        } else{
+            return false;
         }
     }
 }
