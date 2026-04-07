@@ -18,10 +18,11 @@ public class practiceJava {
 //        practiceJava t5 = new practiceJava();
 //        System.out.println(t5.nearTen(17));
         // task-6
-        practiceJava t6 = new practiceJava();
-        System.out.println(t6.teaParty(20, 6));
+//        practiceJava t6 = new practiceJava();
+//        System.out.println(t6.teaParty(20, 6));
         // task-7
         practiceJava t7 = new practiceJava();
+        System.out.println(t7.twoAsOne(3, 1, 2));
         // task-8
         practiceJava t8 = new practiceJava();
         // task-9
@@ -127,6 +128,21 @@ public class practiceJava {
             return 2;
         } else{
             return 1;
+        }
+    }
+    public boolean twoAsOne(int a, int b, int c){
+
+        if (a + b == c){
+            return true;
+        }
+        else if (a + c == b){
+            return true;
+        }
+        else if (b + c == a){
+            return true;
+        }
+        else{
+            return false;
         }
     }
 }
