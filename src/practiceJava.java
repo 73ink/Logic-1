@@ -15,10 +15,11 @@ public class practiceJava {
 //        System.out.println(t4.more20(20));
 
         // task-5
-        practiceJava t5 = new practiceJava();
-        System.out.println(t5.nearTen(17));
+//        practiceJava t5 = new practiceJava();
+//        System.out.println(t5.nearTen(17));
         // task-6
         practiceJava t6 = new practiceJava();
+        System.out.println(t6.teaParty(20, 6));
         // task-7
         practiceJava t7 = new practiceJava();
         // task-8
@@ -117,5 +118,15 @@ public class practiceJava {
             return false;
         }
 
+    }
+    public int teaParty(int tea, int candy){
+
+        if (tea < 5 || candy < 5){
+            return 0;
+        } else if (tea >= candy * 2 || candy >= tea * 2){
+            return 2;
+        } else{
+            return 1;
+        }
     }
 }
