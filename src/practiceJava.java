@@ -1,42 +1,44 @@
 public class practiceJava {
     // start of main method
-    public static void  main(String[] args) {
-    // task-1
+    public static void main(String[] args) {
+        // task-1
 //    practiceJava t1 = new practiceJava();
 //    System.out.println(t1.cigarParty(30, false)); // false
-    // task-2
+        // task-2
 //        practiceJava t2 = new practiceJava();
 //        System.out.println(t2.caughtSpeeding(65, true));
-    // task-3
+        // task-3
 //        practiceJava t3 = new practiceJava();
 //        System.out.println(t3.love6(6,4));
-    // task-4
-        practiceJava t4 = new practiceJava();
-        System.out.println(t4.more20(20));
+        // task-4
+//        practiceJava t4 = new practiceJava();
+//        System.out.println(t4.more20(20));
 
         // task-5
         practiceJava t5 = new practiceJava();
-    // task-6
+        System.out.println(t5.nearTen(17));
+        // task-6
         practiceJava t6 = new practiceJava();
-    // task-7
+        // task-7
         practiceJava t7 = new practiceJava();
-    // task-8
+        // task-8
         practiceJava t8 = new practiceJava();
-    // task-9
+        // task-9
         practiceJava t9 = new practiceJava();
-    // task-10
+        // task-10
         practiceJava t10 = new practiceJava();
-    // task-11
+        // task-11
         practiceJava t11 = new practiceJava();
-    // task-12
+        // task-12
         practiceJava t12 = new practiceJava();
-    // task-13
+        // task-13
         practiceJava t13 = new practiceJava();
-    // task-14
+        // task-14
         practiceJava t14 = new practiceJava();
-    // task-15
+        // task-15
         practiceJava t15 = new practiceJava();
     }
+
     // end of main method
     //start of sub-methods
     // task-1 method
@@ -54,47 +56,66 @@ public class practiceJava {
 
         return false;
     }
-    public int caughtSpeeding (int speed, boolean isBirthday){
-        if (isBirthday){
-            if (speed <= 65){
-                return 0 ;
-            } else if (speed >=66 && speed <=85) {
-                return 1 ;
-            } else { return 2; }
-        }
-        else {
-            if (speed <= 60){
-                return 0 ;
-            } else if (speed >=61 && speed <=80) {
-                return 1 ;
-            } else { return 2; }
+
+    public int caughtSpeeding(int speed, boolean isBirthday) {
+        if (isBirthday) {
+            if (speed <= 65) {
+                return 0;
+            } else if (speed >= 66 && speed <= 85) {
+                return 1;
+            } else {
+                return 2;
+            }
+        } else {
+            if (speed <= 60) {
+                return 0;
+            } else if (speed >= 61 && speed <= 80) {
+                return 1;
+            } else {
+                return 2;
+            }
         }
     }
-    public boolean love6(int a, int b){
 
-        if (a == 6 || b == 6){
+    public boolean love6(int a, int b) {
+
+        if (a == 6 || b == 6) {
             return true;
-        }
-        else if (a + b == 6){
+        } else if (a + b == 6) {
             return true;
-        }
-        else if (Math.abs(a - b) == 6){
+        } else if (Math.abs(a - b) == 6) {
             return true;
-        }
-        else{
+        } else {
             return false;
         }
     }
-    public boolean more20(int n){
 
-        if (n % 20 == 1){
+    public boolean more20(int n) {
+
+        if (n % 20 == 1) {
             return true;
-        }
-        else if (n % 20 == 2){
+        } else if (n % 20 == 2) {
             return true;
-        }
-        else{
+        } else {
             return false;
         }
+    }
+
+    public boolean nearTen(int num) {
+        int reminder = num % 10;
+        if (reminder == 0) {
+            return true;
+        } else if (reminder == 1) {
+            return true;
+        } else if (reminder == 2) {
+            return true;
+        } else if (reminder == 8) {
+            return true;
+        } else if (reminder == 9) {
+            return true;
+        } else {
+            return false;
+        }
+
     }
 }
